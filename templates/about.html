@@ -1,80 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block title %}
+    {{ super() }}
+    About Me
+{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="description" name="description">
-    <meta name="google" content="notranslate"/>
-    <meta content="Portfolio by Karla Sequen" name="karlitasg7">
+{% block content %}
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-    <link href="./static/assets/favicon.ico" rel="icon">
+    {% include 'header.html' %}
 
-    <title>Karla Sequen</title>
+    <div class="section-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-container-spacer text-center">
+                        <h1 class="h2">About me</h1>
+                    </div>
 
-    <link href="./static/main.3f6952e4.css" rel="stylesheet">
-</head>
-
-<body class="">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
-
-{% include 'header.html' %}
-
-<div class="section-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-container-spacer text-center">
-                    <h1 class="h2">About me</h1>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <h3></h3>
-                                <p>Full Stack Developer with 10+ years of experience developing web application with
-                                    AngularJS and Angular 2+. I have experience develop in the backend API's Rest with
-                                    Java8+, Kotlin, using Spring Framework with Hibernate, JPA and using PostgreSQL and
-                                    SQL Server as a database. </p>
-                                <h3></h3>
-                                <p>I am a person who likes to learn something new every day, I love to solve real life
-                                    problems using technology
-                                <h3></h3>
-                                <p>
-                                    If you like my profile and you want to know more about me, please contact me to
-                                    karlasequen@gmail.com</p>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                                <img src="./static/assets/images/profil.jpg" class="img-responsive" alt="">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <h3></h3>
+                                    <p>Full Stack Developer with 10+ years of experience developing web application with
+                                        AngularJS and Angular 2+. I have experience develop in the backend API's Rest
+                                        with
+                                        Java8+, Kotlin, using Spring Framework with Hibernate, JPA and using PostgreSQL
+                                        and
+                                        SQL Server as a database. </p>
+                                    <h3></h3>
+                                    <p>I am a person who likes to learn something new every day, I love to solve real
+                                        life
+                                        problems using technology
+                                    <h3></h3>
+                                    <p>
+                                        If you like my profile and you want to know more about me, please contact me to
+                                        karlasequen@gmail.com</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <img src="./static/assets/images/profil.jpg" class="img-responsive" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
             </div>
         </div>
     </div>
-</div>
 
-{% include 'footer.html' %}
+    {% include 'footer.html' %}
 
-<script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-        navActivePage();
-    });
-</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            navActivePage();
+        });
+    </script>
 
-<script type="text/javascript" src="./static/main.70a66962.js"></script>
-</body>
-
-</html>
+{% endblock %}

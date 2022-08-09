@@ -32,4 +32,4 @@ def write_to_file(data):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
