@@ -1,7 +1,15 @@
+import unittest
+
 from flask import Flask, render_template, request, redirect
 from jinja2 import TemplateNotFound
 
 app = Flask(__name__)
+
+
+@app.cli.command()
+def test():
+    tests = unittest.TestLoader().discover('tests')
+    unittest.TextTestRunner().run(tests)
 
 
 @app.errorhandler(404)
