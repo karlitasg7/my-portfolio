@@ -1,6 +1,12 @@
 from flask import Flask, render_template, request, redirect
+from jinja2 import TemplateNotFound
 
 app = Flask(__name__)
+
+
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html')
 
 
 @app.route('/')
@@ -10,7 +16,10 @@ def hello_world():
 
 @app.route('/<string:page_name>')
 def html_page(page_name):
-    return render_template(page_name)
+    try:
+        return render_template(page_name)
+    except TemplateNotFound:
+        return render_template('404.html')
 
 
 @app.route('/submit_form', methods=['POST', 'GET'])
