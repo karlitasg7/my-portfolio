@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ super() }}
+    Work
+{% endblock %}
+
+{% block content %}
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+
+    {% include 'header.html' %}
+
+    <div class="section-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="./static/assets/images/work001-01.jpg" class="img-responsive" alt="">
+                    <div class="card-container">
+                        <div class="text-center">
+                            <h1 class="h2">002 : MEGAPACA</h1>
+                        </div>
+                        <p>I have a long history in this company, I work here from the last 12 years.
+                        </p>
+
+                        <p> This company is of sales retail, with more than 100 hundred stores in 4 different countries
+                        </p>
+
+                        <p>I had the opportunity to work in different projects and to be in different roles </p>
+
+                        <p>I work here since October 2010</p>
+
+                        <h3>My principal task and tech stack:</h3>
+                        <div>
+                            <h3>Lead Software Engineer — January 2018 - Present</h3>
+                            <ul>
+                                <li>Implement GitLab CI/CD, reducing by 90% the time required to publish new application
+                                    changes from development to production, as well as reducing code conflicts that
+                                    could occur between developers when integrating new code
+                                </li>
+                                <li>
+                                    Implement hexagonal architecture allowing the source code to be more readable,
+                                    scalable and testable, making it easier for developers to make new changes to
+                                    understand the code and be able to test it
+                                </li>
+                                <li>
+                                    Integrate the point of sale system with different suppliers and payment methods,
+                                    reducing manual processes and increasing sales by 15%.
+                                </li>
+                                <li>
+                                    Perform code reviews, to guide Junior programmers on how to improve their code.
+                                </li>
+                            </ul>
+
+                            <strong>Tech Stack:</strong>Java 8, Java 11, Kotlin, Angular JS, Angular 2+, Spring Boot,
+                            Hibernate, JPA, PostgreSQL, SQL Server, GitLab
+
+                        </div>
+
+                        <div>
+                            <h3>Senior Programming Analyst — January 2015 - January 2018</h3>
+                            <ul>
+                                <li>Participated in the development and implementation of purchasing management systems
+                                    and budget control, reducing by 90% the processes that were carried out manually.
+                                </li>
+                                <li>
+                                    Reduced the number of errors by implementing docker.
+                                </li>
+                                <li>
+                                    Reduced by 95% the time users took to enter documents into the ERP (SAP Business
+                                    One), integrating the company's systems to the ERP so that the information would be
+                                    sent automatically.
+                                </li>
+                            </ul>
+
+                            <strong>Tech Stack:</strong> Java 8, Java 11 Kotlin, Spring Boot, Hibernate, JPA, Vb.net,
+                            C#, Angular 2+, SAP DI API, SAP DI Server
+
+                        </div>
+
+                        <div>
+                            <h3>Junior Programmer — October 2010 - January 2015</h3>
+                            <ul>
+                                <li>Developed the WMS system, improving by 70% the processes to control the entry and
+                                    exit of merchandise in the warehouse.
+                                </li>
+                                <li>
+                                    Made reports using Jasper Reports and Crystal Reports to reduce by 80% the time it
+                                    took for users to generate reports manually.
+                                </li>
+                                <li>
+                                    Reduced the number of manual processes developing the point of sale system.
+                                </li>
+                            </ul>
+
+                            <strong>Tech Stack:</strong>VB.Net, C#, Java 8, Angular JS, HTML, CSS, Jasper Reports,
+                            Crystal Reports
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            navActivePage();
+        });
+    </script>
+
+{% endblock %}

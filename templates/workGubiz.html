@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ super() }}
+    Work
+{% endblock %}
+
+{% block content %}
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+
+    {% include 'header.html' %}
+
+    <div class="section-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="./static/assets/images/work001-01.jpg" class="img-responsive" alt="">
+                    <div class="card-container">
+                        <div class="text-center">
+                            <h1 class="h2">001 : Gubiz</h1>
+                        </div>
+                        <p>This was my first job as a programmer, unfortunately the company no longer exists,
+                            but that was a company to sell and buy products.
+                        </p>
+
+                        <p>I work at this company from February 2018 to July 2010</p>
+
+                        <h3>My principal task and tech stack was:</h3>
+                        <div>
+                            <ul>
+                                <li>Developed desktop applications and SOAP Web Services using .Net and Delphi for the
+                                    applications that
+                                    were used to manage the company’s online store.
+                                </li>
+                            </ul>
+
+                            <strong>Tech Stack:</strong> Delphi,C#,Vb.net.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'footer.html' %}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            navActivePage();
+        });
+    </script>
+
+{% endblock %}
